@@ -37,5 +37,6 @@ calculateButton.addEventListener("click", () => {
     }
 
     generateOperator2();
+    userResult.value = "";
 
 });
