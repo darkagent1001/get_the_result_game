@@ -8,7 +8,7 @@ function checkUserResult(){
     const equationElement = document.querySelector("#equation");
     let generatedEquation;
 
-    function equationGenerator(){
+    function fullEquationGenerator(){
 
         generatedEquation = generateEquation();
         userResult.value = "";
@@ -16,11 +16,11 @@ function checkUserResult(){
 
     }
 
-    equationGenerator();
+    fullEquationGenerator();
 
     checkResultButton.addEventListener("click", () => {
 
-        const equationResult = eval(generatedEquation);
+        const equationResult = Math.floor(eval(generatedEquation));
 
         if(userResult.value == equationResult || userResult.value == "infinity"){
 
@@ -32,7 +32,7 @@ function checkUserResult(){
 
         }
 
-        equationGenerator();
+        fullEquationGenerator();
         
     });
 
