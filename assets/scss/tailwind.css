@@ -586,13 +586,6 @@ button:hover,
   padding: 1rem;
 }
 
-.card-foot {
-  border-top-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(222 222 222 / var(--tw-border-opacity));
-  padding: 1rem;
-}
-
 .form-input {
   border-radius: 0.5rem;
   border-width: 2px;
