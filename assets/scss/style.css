@@ -1,7 +1,23 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @layer components {
   button,
   .button {
-    @apply text-lg rounded transition duration-150 px-4 py-2 hover:bg-opacity-80;
+    @apply text-base rounded transition duration-150 px-4 py-2 hover:bg-opacity-80;
+  }
+  .card {
+    @apply rounded shadow-md overflow-hidden mx-auto;
+  }
+  .card-head {
+    @apply border-b-2 border-[#DEDEDE] p-4;
+  }
+  .card-content {
+    @apply p-4;
+  }
+  .card-foot {
+    @apply border-t-2 border-[#DEDEDE] p-4;
   }
   .form-input {
     @apply text-lg border-2 border-[#DEDEDE] rounded outline-none transition duration-150 pr-3 pl-1 py-2;
